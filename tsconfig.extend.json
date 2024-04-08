@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@": ["./src/"],
+      "images": ["images/"],
+      "services": ["services/"],
+      "stores": ["stores/"],
+      "components": ["components/"],
+      "pages": ["pages/"],
+      "routes": ["routes/"],
+      "utils": ["utils/"],
+      "hooks": ["hooks/"],
+      "lotties": ["lotties/"],
+      "theme": ["theme.ts"],
+      "generated": ["generated/"]
+    }
+  }
+}

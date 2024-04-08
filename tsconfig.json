@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.extend.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "experimentalDecorators": true, //允许使用装饰器语法
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "transform": "@formatjs/ts-transformer",
+        "import": "transform",
+        "type": "config",
+        "overrideIdFn": "[sha512:contenthash:base64:6]",
+        "ast": true
+      },
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "incremental": true
+  },
+  "exclude": [],
+  "include": ["react-app-env.d.ts", "src/**/*.ts", "src/**/*.tsx"]
+}
